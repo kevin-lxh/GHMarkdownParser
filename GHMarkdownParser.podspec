@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
     'GHMarkdownParser/**/*.{h,m}'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load', 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/GHMarkdownParser/discount"' }
   s.resources = 'discount/blocktags'
+  s.public_header_files = 'GHMarkdownParser/*/.h'
   s.requires_arc = true
 end
